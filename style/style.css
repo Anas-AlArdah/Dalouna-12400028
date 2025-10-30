@@ -1,0 +1,463 @@
+/* 
+ css/styles.css 
+ Student Name: Anas Rabee Ismael Alardah
+ Student Id: 12400028
+*/
+
+:root {
+    --bg: #faf7f2;
+    --text: hwb(0 12% 88%);
+    --muted: #6b6b6b;
+    --brand: #216869;
+    --brand-2: #49a078;
+    --card: #ffffff;
+    --border: #e9e3db;
+}
+body {
+    margin: 0;
+    padding: 0;
+     padding-top: 70px; 
+    font-family: "Rubik", sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    color: var(--text);
+    /*background: var(--bg);*/
+    line-height: 1.6;
+    background-color: #f5f0e9;
+}
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #f5f0e9;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px; /* رجع المسافات الطبيعية */
+  box-sizing: border-box;
+}
+
+.site-header>h2{
+  color: green;
+   font-weight: bold;
+}
+.nav-bar{
+  display: flex;
+  gap: 30px;
+ 
+}
+.nav-bar>a{
+  color: green;
+  text-decoration: none;
+}
+.nav-bar a:hover {
+  color: rgb(17, 70, 15); 
+}
+.hero{
+  position: relative;
+  height: 760px;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: white;
+}
+
+.hero *{
+  position: relative;
+  z-index: 1;
+}
+.hero img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.hero * {
+  position: relative;
+  z-index: 1;
+}
+.hero button:first-of-type{
+  background-color: rgba(73, 160, 120, 0.9);
+ border: none;
+ border-radius:15px;
+ padding: 6px 15px;
+}
+.hero button:first-of-type:hover {
+  background-color: #3ea374;
+  transition: 0.3s;
+}
+
+.hero button:last-of-type{
+  background-color: #2f8563;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 25px;
+}
+.hero button:last-of-type:hover {
+  background-color: #3ea374;
+  transition: 0.3s;
+}
+#about{
+  padding:  80px 100px;
+}
+.box-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 40px;
+}
+.box, .box-2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  background-color: rgb(244, 243, 243);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.box-2 p:first-of-type {
+  margin-top: -30px; 
+}
+#about .box-2 p.trans {
+  margin-top: 50px !important;
+}
+
+.box-2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(244, 243, 243);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  justify-content: flex-start; 
+  gap: 50px; 
+}
+.btn-b1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btn-b1 button {
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  border-radius: 25px;
+  padding: 8px 18px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.btn-b1 button:hover {
+  background-color: #f5f5f5;
+  border-color: #bfbfbf;
+}
+#menu {
+  padding: 80px 100px;
+}
+
+#menu h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.menu-card {
+  background-color: rgb(244, 243, 243);
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 30px;
+  flex: 1;
+  min-width: 280px;
+}
+
+.menu-card h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.menu-card p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.menu-card p:last-of-type {
+  border-bottom: none;
+}
+
+.menu-card b {
+  color: #333;
+  font-weight: 600;
+}
+
+.price {
+  float: right;
+  color: #1b8a5e;
+  font-weight: 600;
+}
+
+.menu-card small {
+  color: #777;
+  font-size: 14px;
+}
+
+#menu .trans {
+  color: #888;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+/*------*/
+/* ===== HOURS & RESERVE A TABLE بنفس ستايل ABOUT ===== */
+#hours {
+  padding: 80px 100px;
+}
+
+.hours-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+#hours .box-2,
+#hours .box2 {
+  flex: 1;
+ background-color: rgb(244, 243, 243);
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+  line-height: 1.6;
+}
+
+#hours h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#hours table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  color: #333;
+}
+
+#hours td {
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+#hours td:first-child {
+  font-weight: 500;
+  color: #222;
+  padding-left: 5px; /* شوي فراغ من اليسار */
+}
+
+#hours td:last-child {
+  text-align: right;
+  color: black;
+  font-weight: 500;
+  padding-right: 25px; /* هاي بتحرك الوقت أكثر لليمين */
+}
+
+#hours tr:last-child td {
+  border-bottom: none;
+}
+/*---*/
+/* ===== تعديل ستايل قسم Reserve a Table ===== */
+#hours .box2 a {
+  text-decoration: none;       /* شيل الخط اللي تحت اللينكات */
+  color: #1b8a5e;              /* نفس لون البراند */
+  font-weight: 500;
+}
+
+#hours .box2 a:hover {
+  text-decoration: underline;  /* يظهر خط خفيف عند الهوفر فقط */
+}
+/*---*/
+/* ==== Find Us بنفس تصميم About تماماً ==== */
+#find-us {
+  padding: 80px 100px;
+}
+
+.Find-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 40px;
+}
+
+.Find-container .bo1,
+.Find-container .bo2 {
+  flex: 1;
+  background-color: rgb(244, 243, 243);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 350px; /* 🔥 إجبار الكروت تكون بنفس ارتفاع about */
+}
+
+/* الماب كخلفية داخل الكرت */
+.Find-container .bo2 {
+  background-image: url("../images/map.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* نخفي صورة الماب الأصلية من داخل HTML */
+.Find-container .bo2 img {
+  display: none;
+}
+
+/* responsiveness */
+
+/* --- إجبار تقليل المسافات في Find Us card --- */
+#find-us .Find-container .bo1 p,
+#find-us .Find-container .bo1 p.trans,
+#find-us .Find-container .bo1 > p {
+  margin-top: 0 !important;
+  margin-bottom: 60px !important;   /* المسافة بين الفقرات */
+  line-height: 1.28 !important;     /* ارتفاع السطر أصغر */
+  color: #333 !important;
+}
+
+/* لو انت مستخدم .box style للـ cards مثل About: نوفّر نفس الشكل */
+#find-us .Find-container .bo1 {
+  background-color: rgb(244, 243, 243) !important;
+  padding: 30px !important;
+  border-radius: 15px !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  min-height: 220px; /* عشان يطابق ارتفاع الـ About card تقريباً */
+}
+/*--*/
+/* Footer */
+.site-footer {
+   /* نفس خلفية باقي الصفحات */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #6b6b6b;
+  border-top: 1px solid #e6e0d9;
+  margin-top: 60px;
+}
+
+.site-footer hr {
+  border: none;
+  border-top: 1px solid #e6e0d9;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.site-footer a {
+  color: #0077b6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.site-footer a {
+  text-decoration: none;
+  color: #0066cc; /* أو اللون اللي بدك ياه */
+  transition: color 0.2s ease;
+}
+
+.site-footer a:hover {
+  text-decoration: none; /* هذا يمنع ظهور الخط */
+  color: #004999; /* لون أغمق شوي لما تمرر الماوس (اختياري) */
+}
+
+/* 📱=== Responsive for mobile (≤768px) === */
+@media (max-width: 768px) {
+
+  .site-header {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  #about, #menu, #hours, #find-us {
+    padding: 40px 20px;
+  }
+
+  .box-container,
+  .cards-container,
+  .hours-container,
+  .Find-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .box, .box-2, .menu-card, .bo1, .bo2, .box2 {
+    width: 100%;
+  }
+
+  .hero img {
+    object-fit: cover;
+  }
+
+  .btn-b1 {
+    justify-content: center;
+  }
+}
+
+/* 💻=== Desktop (≥1024px) === */
+@media (min-width: 1024px) {
+  .site-header {
+    padding: 0 100px;
+  }
+
+  #about, #menu, #hours, #find-us {
+    padding: 80px 100px;
+  }
+}
+/* جعل النصوص بكلاس trans شبه شفافة */
+.trans {
+  opacity: 0.6;          /* درجة الشفافية (من 0 إلى 1) */
+  color: #000 !important; /* حافظ على اللون الأساسي */
+}
