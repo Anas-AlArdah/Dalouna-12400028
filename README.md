@@ -7,12 +7,12 @@ It’s a responsive restaurant website for Dalouna Restaurant, built using only 
 
 ✨ Features :
 
-✅ Semantic HTML structure (header, nav, main, sections, footer)
-✅ Responsive design using Flexbox
-✅ Sticky header that stays visible while scrolling
-✅ Internal links between sections
-✅ Styled menu and contact sections
-✅ Custom color theme and Rubik font
+Semantic HTML structure (header, nav, main, sections, footer).
+Responsive design using Flexbox.
+Sticky header that stays visible while scrolling.
+Internal links between sections.
+Styled menu and contact sections.
+Custom color theme and Rubik font.
 
 🔗 Links :
 
