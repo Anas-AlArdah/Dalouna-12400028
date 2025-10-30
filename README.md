@@ -19,7 +19,7 @@ Styled menu and contact sections.
 
 Custom color theme and Rubik font.
 
-🔗 Links :
+🔗 Links:
 
 📂 GitHub Repository: Anas-AlArdah/Dalouna-12400028
 
