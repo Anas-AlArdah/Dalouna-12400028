@@ -405,7 +405,7 @@ color: white;
 @media (max-width: 768px) {
 
   .site-header {
-    flex-direction: column;
+    flex-direction:row;
     padding: 20px;
     height: auto;
     text-align: center;
