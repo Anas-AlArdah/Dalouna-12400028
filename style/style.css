@@ -404,8 +404,8 @@ color: white;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 20px;
-    height: 60px; /* قلل الارتفاع */
+    padding: 8px 30px;
+   
   }
 
   .site-header h2 {
@@ -433,7 +433,6 @@ color: white;
   }
 
   .hero button:first-of-type {
-    background: transparent;
     color: #fff; /* الأبيض بدل الأزرق */
     font-weight: 600;
     border: none;
