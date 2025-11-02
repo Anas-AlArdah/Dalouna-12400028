@@ -398,7 +398,6 @@ color: white;
 
 /* 📱=== Responsive for mobile (≤768px) === */
 /* 📱=== Responsive for mobile (≤768px) === */
-/* 📱=== Responsive for mobile (≤768px) === */
 @media (max-width: 768px) {
   /* الهيدر */
   .site-header {
@@ -406,9 +405,7 @@ color: white;
     justify-content: space-between;
     align-items: center;
     padding: 8px 20px;
-    height: 60px;
-    background-color: #f5f0e9; /* ثابت ولون واضح */
-    position: relative; /* ما يتراكب على الصورة */
+    height: 60px; /* قلل الارتفاع */
   }
 
   .site-header h2 {
@@ -422,53 +419,35 @@ color: white;
 
   .nav-bar a {
     font-size: 14px;
-    color: green; /* خليه نفس اللون العام */
-  }
-
-  .nav-bar a:hover {
-    color: #11460f;
   }
 
   /* الهيرو */
   .hero {
     height: auto;
-    padding: 0; /* شيل الفراغ فوق */
-    margin: 0;
+    padding: 60px 20px 80px;
   }
 
   .hero img {
     object-fit: cover;
-    height: 400px;
+    height: 400px; /* أصغر شوي عالجوال */
   }
 
-  /* الزر الأول */
   .hero button:first-of-type {
-    background-color: rgba(73, 160, 120, 0.9);
-    color: #fff;
+    background: transparent;
+    color: #fff; /* الأبيض بدل الأزرق */
     font-weight: 600;
     border: none;
-    border-radius: 15px;
-    padding: 6px 15px;
     font-size: 16px;
-    margin-top: 20px;
   }
 
-  /* زر View Menu */
   .hero button:last-of-type {
-    margin-top: 25px;
+    margin-top: 20px;
     padding: 12px 28px;
     font-size: 16px;
     background-color: #2f8563;
-    border-radius: 25px;
-    border: none;
-    color: white;
   }
 
-  .hero button:last-of-type:hover {
-    background-color: #3ea374;
-  }
-
-  /* الأقسام */
+  /* الكروت */
   #about,
   #menu,
   #hours,
@@ -492,10 +471,11 @@ color: white;
   .bo2,
   .box2 {
     width: 90%;
-    max-width: 360px;
+    max-width: 360px; /* 🔥 الكروت تصير بنفس عرض الصورة الأساسية */
     margin: 0 auto;
   }
 
+  /* النصوص داخل find-us وabout */
   .btn-b1 {
     justify-content: center;
   }
@@ -504,7 +484,6 @@ color: white;
     text-align: center;
   }
 }
-
 
 
 /* 💻=== Desktop (≥1024px) === */
