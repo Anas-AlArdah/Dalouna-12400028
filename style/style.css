@@ -225,11 +225,6 @@ color: white;
   margin-top: 10px;
 }
 
-
-
-
-
-
 /*------*/
 /* ===== HOURS & RESERVE A TABLE بنفس ستايل ABOUT ===== */
 #hours {
@@ -412,7 +407,7 @@ color: white;
   }
 
   .nav-bar {
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
   }
 
