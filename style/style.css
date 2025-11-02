@@ -397,13 +397,19 @@ color: white;
 }
 
 /* 📱=== Responsive for mobile (≤768px) === */
+/* 📱=== Responsive for mobile (≤768px) === */
 @media (max-width: 768px) {
-
+  /* الهيدر */
   .site-header {
-    flex-direction:row;
-   padding: 10px 100px;
-    height: auto;
-    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    height: 60px; /* قلل الارتفاع */
+  }
+
+  .site-header h2 {
+    font-size: 20px;
   }
 
   .nav-bar {
@@ -411,12 +417,41 @@ color: white;
     gap: 10px;
   }
 
-  .hero {
-    height: auto;
-    padding: 40px 20px;
+  .nav-bar a {
+    font-size: 14px;
   }
 
-  #about, #menu, #hours, #find-us {
+  /* الهيرو */
+  .hero {
+    height: auto;
+    padding: 60px 20px 80px;
+  }
+
+  .hero img {
+    object-fit: cover;
+    height: 400px; /* أصغر شوي عالجوال */
+  }
+
+  .hero button:first-of-type {
+    background: transparent;
+    color: #fff; /* الأبيض بدل الأزرق */
+    font-weight: 600;
+    border: none;
+    font-size: 16px;
+  }
+
+  .hero button:last-of-type {
+    margin-top: 20px;
+    padding: 12px 28px;
+    font-size: 16px;
+    background-color: #2f8563;
+  }
+
+  /* الكروت */
+  #about,
+  #menu,
+  #hours,
+  #find-us {
     padding: 40px 20px;
   }
 
@@ -425,21 +460,31 @@ color: white;
   .hours-container,
   .Find-container {
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
+    gap: 25px;
   }
 
-  .box, .box-2, .menu-card, .bo1, .bo2, .box2 {
-    width: 100%;
+  .box,
+  .box-2,
+  .menu-card,
+  .bo1,
+  .bo2,
+  .box2 {
+    width: 90%;
+    max-width: 360px; /* 🔥 الكروت تصير بنفس عرض الصورة الأساسية */
+    margin: 0 auto;
   }
 
-  .hero img {
-    object-fit: cover;
-  }
-
+  /* النصوص داخل find-us وabout */
   .btn-b1 {
     justify-content: center;
   }
+
+  .hero * {
+    text-align: center;
+  }
 }
+
 
 /* 💻=== Desktop (≥1024px) === */
 @media (min-width: 1024px) {
