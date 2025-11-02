@@ -396,75 +396,112 @@ color: white;
   color: #004999; /* لون أغمق شوي لما تمرر الماوس (اختياري) */
 }
 
+/* 📱=== Responsive for mobile (≤768px) === */
+/* 📱=== Responsive for mobile (≤768px) === */
+/* 📱=== Responsive for mobile (≤768px) === */
 @media (max-width: 768px) {
-
   /* الهيدر */
   .site-header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    height: 60px;
+    background-color: #f5f0e9; /* ثابت ولون واضح */
+    position: relative; /* ما يتراكب على الصورة */
+  }
+
+  .site-header h2 {
+    font-size: 20px;
   }
 
   .nav-bar {
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     gap: 10px;
-    margin-top: 8px;
   }
 
   .nav-bar a {
-    font-size: 15px;
+    font-size: 14px;
+    color: green; /* خليه نفس اللون العام */
   }
 
-  /* الصورة الرئيسية */
-  .hero img {
-    width: 100%;
+  .nav-bar a:hover {
+    color: #11460f;
+  }
+
+  /* الهيرو */
+  .hero {
     height: auto;
+    padding: 0; /* شيل الفراغ فوق */
+    margin: 0;
+  }
+
+  .hero img {
     object-fit: cover;
-    margin-top: 0;
+    height: 400px;
   }
 
-  .hero h1 {
-    font-size: 1.6rem;
+  /* الزر الأول */
+  .hero button:first-of-type {
+    background-color: rgba(73, 160, 120, 0.9);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+    padding: 6px 15px;
+    font-size: 16px;
+    margin-top: 20px;
   }
 
-  .hero p {
-    font-size: 0.95rem;
-    width: 90%;
+  /* زر View Menu */
+  .hero button:last-of-type {
+    margin-top: 25px;
+    padding: 12px 28px;
+    font-size: 16px;
+    background-color: #2f8563;
+    border-radius: 25px;
+    border: none;
+    color: white;
   }
 
-  .hero button {
-    padding: 10px 20px;
-    font-size: 0.9rem;
+  .hero button:last-of-type:hover {
+    background-color: #3ea374;
   }
 
-  /* الصناديق */
-  .box-container {
-    flex-direction: column;
-    gap: 20px;
-    padding: 0 20px;
+  /* الأقسام */
+  #about,
+  #menu,
+  #hours,
+  #find-us {
+    padding: 40px 20px;
   }
 
-  .cards-container {
+  .box-container,
+  .cards-container,
+  .hours-container,
+  .Find-container {
     flex-direction: column;
     align-items: center;
+    gap: 25px;
   }
 
-  .menu-card {
+  .box,
+  .box-2,
+  .menu-card,
+  .bo1,
+  .bo2,
+  .box2 {
     width: 90%;
+    max-width: 360px;
+    margin: 0 auto;
   }
 
-  /* الجدول */
-  table {
-    width: 100%;
-    font-size: 0.9rem;
+  .btn-b1 {
+    justify-content: center;
   }
 
-  /* الفوتر */
-  .site-footer {
+  .hero * {
     text-align: center;
-    font-size: 0.85rem;
-    padding: 15px;
   }
 }
 
