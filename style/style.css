@@ -433,13 +433,14 @@ color: white;
   }
 
   .hero button:first-of-type {
-    color: #fff; /* الأبيض بدل الأزرق */
+    color: white; /* الأبيض بدل الأزرق */
     font-weight: 600;
     border: none;
     font-size: 16px;
   }
 
   .hero button:last-of-type {
+    color: white;
     margin-top: 20px;
     padding: 12px 28px;
     font-size: 16px;
