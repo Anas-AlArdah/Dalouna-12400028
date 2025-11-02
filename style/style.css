@@ -401,7 +401,7 @@ color: white;
 
   .site-header {
     flex-direction:row;
-    padding: 15px;
+   padding: 10px 100px;
     height: auto;
     text-align: center;
   }
